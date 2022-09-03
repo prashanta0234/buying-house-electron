@@ -12,6 +12,8 @@ If its not working, then run: npm install -g electron
 
 Prashanta Chakraborty  (https://github.com/prashanta0234)
 
+Morshedul Munna (https://github.com/morshedulmunna)
+
 Sajed (https://github.com/Nishikaru)
 
-Morshedul Munna (https://github.com/morshedulmunna)
+
