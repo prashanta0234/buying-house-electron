@@ -5,9 +5,9 @@ import logo from "../../images/logo/logo.svg";
 const Login = () => {
   return (
     <>
-      <div className="relative w-full">
+      <div className="relative w-full  ">
         <div className="min-w-[40vw] hidden lg:block bg-main h-[100vh] absolute left-0 z-10 opacity-50"></div>
-        <div className="bg-gray-100 w-full h-[100vh] flex justify-center items-center ">
+        <div className="bg-gray-100 w-full h-screen h-[100vh] flex justify-center items-center ">
           <div className="bg-white w-[80%] mx-auto h-[80vh] rounded-lg drop-shadow-lg p-6">
             <Link
               className="font-medium hover:text-blue-500 hover:underline float-right"
