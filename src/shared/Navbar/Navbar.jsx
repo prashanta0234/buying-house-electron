@@ -11,7 +11,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="row-item"
+                  to="/row-item"
                 >
                   Row Items
                 </Link>
@@ -19,7 +19,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="buyer_list"
+                  to="/buyer_list"
                 >
                   Buyer List
                 </Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="employee-list"
+                  to="/employee-list"
                 >
                   Employee List
                 </Link>
@@ -35,15 +35,15 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="margin"
+                  to="/addItem"
                 >
-                  Margin
+                  Add Product
                 </Link>
               </li>
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="product"
+                  to="/product"
                 >
                   Product List
                 </Link>

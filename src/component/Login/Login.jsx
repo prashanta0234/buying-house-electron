@@ -1,8 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 import logo from "../../images/logo/logo.svg";
+import swal from "sweetalert";
 
 const Login = () => {
+  let pass = useRef(null);
+  let mail = useRef(null);
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    let password = pass.current.value;
+    let email = mail.current.value;
+
+    if (email == "admin@gmail.com") {
+      if (password == "admin123") {
+        navigate("/addItem");
+      } else {
+        swal("Sorry!", "Please enter Correct password!", "warning");
+      }
+    } else {
+      swal("Sorry!", "Please enter Correct Email!", "warning");
+    }
+  };
   return (
     <>
       <div className="relative w-full  ">
@@ -25,7 +46,7 @@ const Login = () => {
                   Log In
                 </p>
 
-                <form>
+                <form onSubmit={handleLogin}>
                   <div className="form-control w-full mb-6">
                     <label className="label">
                       <span className="label-text text-lg">Email Address</span>
@@ -34,6 +55,7 @@ const Login = () => {
                       type="text"
                       placeholder="Email"
                       name="email"
+                      ref={mail}
                       className="input input-bordered border-main w-full focus:outline-main"
                     />
                   </div>
@@ -43,6 +65,7 @@ const Login = () => {
                       <span className="label-text text-lg">Password</span>
                     </label>
                     <input
+                      ref={pass}
                       type="password"
                       placeholder="Password"
                       name="Password"
