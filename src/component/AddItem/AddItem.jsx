@@ -74,6 +74,7 @@ const AddItem = () => {
                 name="name"
                 placeholder="Buyer Name"
                 ref={buyerName}
+                required
               />
               <input
                 className="py-4 rounded-md px-4 placeholder:text-md focus:text-md outline-none"
@@ -81,6 +82,8 @@ const AddItem = () => {
                 name="phone"
                 placeholder="Buyer Phone"
                 ref={buyerPhone}
+                minlength="8"
+                required
               />
               <input
                 className="py-4 rounded-md px-4 placeholder:text-md focus:text-md outline-none"
@@ -88,13 +91,15 @@ const AddItem = () => {
                 name="product_name"
                 placeholder="Product Name"
                 ref={productName}
+                required
               />
               <input
                 className="py-4 rounded-md px-4 placeholder:text-md focus:text-md outline-none"
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Email Address"
                 ref={mail}
+                required
               />
             </div>
 
@@ -104,6 +109,7 @@ const AddItem = () => {
               name="quantity"
               placeholder="Product Quantity"
               ref={pQuentity}
+              required
             />
             <textarea
               className="py-4 w-full rounded-md px-4 placeholder:text-md focus:text-md outline-none"
@@ -112,6 +118,7 @@ const AddItem = () => {
               rows="5"
               placeholder="Your Address Here"
               ref={addr}
+              required
             ></textarea>
             <button
               type="submit"

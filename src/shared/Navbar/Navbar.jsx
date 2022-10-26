@@ -19,7 +19,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="/buyer_list"
+                  to="/buyerlist"
                 >
                   Buyer List
                 </Link>

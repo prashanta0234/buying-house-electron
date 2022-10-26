@@ -7,7 +7,7 @@
       "p_name": "School belt",
       "email": "abc@gmail.com",
       "p_quentity": "200",
-      "date": "May 10, 2022",
+      "date": "Sun Oct 23 2022",
       "address": "mirpur-2,dhaka"
     },
     {
@@ -39,16 +39,6 @@
       "date": "Sun Oct 23 2022",
       "address": "Mirpur-2",
       "id": 4
-    },
-    {
-      "name": "",
-      "phone": "",
-      "p_name": "",
-      "email": "",
-      "p_quentity": "",
-      "date": "Sun Oct 23 2022",
-      "address": "",
-      "id": 5
     },
     {
       "name": "Prashanta Chakraborty",
@@ -102,16 +92,6 @@
     },
     {
       "name": "Prashanta Chakraborty",
-      "phone": "",
-      "p_name": "ssss",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "500",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 11
-    },
-    {
-      "name": "Prashanta Chakraborty",
       "phone": "01754540234",
       "p_name": "belt",
       "email": "prashanta0234@gmail.com",
@@ -149,6 +129,26 @@
       "date": "Sun Oct 23 2022",
       "address": "dhaka, bangladesh",
       "id": 15
+    },
+    {
+      "name": "Md Joy",
+      "phone": "017****",
+      "p_name": "card",
+      "email": "joy@gmail.com",
+      "p_quentity": "25",
+      "date": "Thu Oct 27 2022",
+      "address": "Moakhali\n",
+      "id": 16
+    },
+    {
+      "name": "Md rezwan",
+      "phone": "01992386693",
+      "p_name": "Batch",
+      "email": "rezwan@gmail.com",
+      "p_quentity": "20",
+      "date": "Thu Oct 27 2022",
+      "address": "Savar",
+      "id": 17
     }
   ]
 }
