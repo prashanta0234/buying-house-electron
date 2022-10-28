@@ -62,6 +62,7 @@ export default function BuyerList() {
     }
   });
 
+  console.log("from sajed");
   return (
     <>
       <Navbar />
