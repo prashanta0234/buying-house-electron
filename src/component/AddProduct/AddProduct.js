@@ -4,6 +4,11 @@ const AddProduct = () => {
     return (
         <div>
             This is add product!
+            {/* 
+            product name 
+            company name
+            how many piece of item we have in store
+            */}
         </div>
     );
 };
