@@ -149,6 +149,16 @@
       "date": "Thu Oct 27 2022",
       "address": "Savar",
       "id": 17
+    },
+    {
+      "name": "md sajed",
+      "phone": "01958858824",
+      "p_name": "Cap",
+      "email": "sajed@gmail.com",
+      "p_quentity": "20",
+      "date": "Fri Oct 28 2022",
+      "address": "Mirpur-2",
+      "id": 18
     }
   ]
 }
