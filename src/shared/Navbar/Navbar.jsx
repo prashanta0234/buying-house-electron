@@ -11,18 +11,18 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
-                  to="/row-item"
+                  to="/rawItems"
                 >
-                  Row Items
+                  Raw Items
                 </Link>
               </li>
 
               <li>
                 <Link
                   className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
-                  to="/addItem"
+                  to="/AddOrder"
                 >
-                  Add Buyer
+                  Add Order
                 </Link>
               </li>
               <li>

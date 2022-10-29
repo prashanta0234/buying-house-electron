@@ -124,7 +124,7 @@ const AddItem = () => {
               type="submit"
               className="btn btn-active btn-secondary font-bold text-2xl capitalize  w-full mt-8"
             >
-              Product Add
+              Add Order
             </button>
           </div>
         </form>
