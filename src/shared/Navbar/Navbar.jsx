@@ -16,6 +16,39 @@ const Navbar = () => {
                   Row Items
                 </Link>
               </li>
+
+              <li>
+                <Link
+                  className="font-semibold hover:text-white  ease-in-out duration-300"
+                  to="/addItem"
+                >
+                  Add Buyer
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold hover:text-white  ease-in-out duration-300"
+                  to="/addItem"
+                >
+                  Add Product
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold hover:text-white  ease-in-out duration-300"
+                  to="/addItem"
+                >
+                  Add Employee
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold hover:text-white  ease-in-out duration-300"
+                  to="/product"
+                >
+                  Product List
+                </Link>
+              </li>
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
@@ -32,29 +65,7 @@ const Navbar = () => {
                   Employee List
                 </Link>
               </li>
-              <li>
-                <Link
-                  className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="/addItem"
-                >
-                  Add Product
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="/product"
-                >
-                  Product List
-                </Link>
-              </li>
             </ul>
-
-            <input
-              className=" py-2 px-4 min-w-[500px] rounded-lg"
-              placeholder="Search Here"
-              type="search"
-            />
           </div>
         </div>
       </div>
