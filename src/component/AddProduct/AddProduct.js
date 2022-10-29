@@ -9,12 +9,13 @@ const AddProduct = () => {
         let dat = new Date();
         let date = await dat.toDateString();
 
+
         const form = e.target;
         const product_name =  form.product_name.value;
         const product_price = form.product_price.value;
         const quantity = form.quantity.value;
 
-        console.log(product_name,product_price,quantity)
+        console.log('results are :- '+product_name,product_price,quantity)
 
     }
     return (
