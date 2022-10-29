@@ -15,7 +15,7 @@ const AddProduct = () => {
         const product_price = form.product_price.value;
         const quantity = form.quantity.value;
 
-        console.log('results are :- '+product_name,product_price,quantity)
+        console.log('results :- '+product_name,product_price,quantity)
 
     }
     return (
