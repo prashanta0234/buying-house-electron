@@ -61,7 +61,8 @@ export default function BuyerList() {
       return true;
     }
   });
-  console.log("i am from master");
+
+
   return (
     <>
       <Navbar />
