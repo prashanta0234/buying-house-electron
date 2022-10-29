@@ -28,7 +28,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="/addItem"
+                  to="/add-products"
                 >
                   Add Product
                 </Link>
