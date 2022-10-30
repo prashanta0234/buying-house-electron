@@ -122,7 +122,7 @@ const AddItem = () => {
             ></textarea>
             <button
               type="submit"
-              className="btn btn-active btn-secondary font-bold text-2xl capitalize  w-full mt-8"
+              className="btn btn-active relative z-[5] border-white border-2 font-bold text-2xl capitalize  w-full mt-8 bg-transparent hover:text-black before:bg-yellow-500  text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:z-[-1] hover:before:w-full hover:before:left-[unset] hover:before:right-0 before:transition-all duration-400 before:rounded-md ease-linear"
             >
               Add Order
             </button>
