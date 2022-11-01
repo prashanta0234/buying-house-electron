@@ -10,32 +10,34 @@ const Navbar = () => {
             <ul className="flex justify-center items-center space-x-8">
               <li>
                 <Link
-                  className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
-                  to="/row-item"
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
+                  to="/rawItems"
                 >
-                  Row Items
+                  Raw Items
                 </Link>
               </li>
 
               <li>
                 <Link
-                  className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
-                  to="/addItem"
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
+                  to="/AddOrder"
                 >
-                  Add Buyer
+                  Add Order
                 </Link>
               </li>
               <li>
                 <Link
                   className="font-semibold hover:text-white  ease-in-out duration-300"
                   to="/addItem"
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
+                  to="/add-products"
                 >
                   Add Product
                 </Link>
               </li>
               <li>
                 <Link
-                  className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
                   to="/addItem"
                 >
                   Add Employee
@@ -43,7 +45,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
                   to="/product"
                 >
                   Product List
@@ -51,7 +53,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
                   to="/buyerlist"
                 >
                   Buyer List
@@ -59,7 +61,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="font-semibold hover:btn-secondary p-2 rounded ease-in-out duration-300"
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
                   to="/employee-list"
                 >
                   Employee List

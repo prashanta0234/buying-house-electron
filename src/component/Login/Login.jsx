@@ -16,7 +16,7 @@ const Login = () => {
 
     if (email == "admin@gmail.com") {
       if (password == "admin123") {
-        navigate("/addItem");
+        navigate("/AddOrder");
       } else {
         swal("Sorry!", "Please enter Correct password!", "warning");
       }
