@@ -36,7 +36,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
-                  to="/addItem"
+                  to="/addEMPLOYEE"
                 >
                   Add Employee
                 </Link>
