@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../shared/Navbar/Navbar";
 import logo from "../../images/logo/logo.svg";
+import PostRequest from "../../request/Post";
 
 const AddProduct = () => {
   const submitHendaler = async (e) => {
@@ -12,8 +13,16 @@ const AddProduct = () => {
     const product_name = form.product_name.value;
     const product_price = form.product_price.value;
     const quantity = form.quantity.value;
-
-    console.log("results :- " + product_name, product_price, quantity);
+    const request = new PostRequest("product", {
+      product_name,
+      product_price,
+      quantity,
+      date,
+    });
+    console.log({ product_name, product_price, quantity, date });
+    form.product_name.value = "";
+    form.product_price.value = "";
+    form.quantity.value = "";
   };
   return (
     <>

@@ -1,170 +1,60 @@
 {
   "order": [
     {
-      "id": 1,
-      "name": "Pro",
-      "phone": "017******",
-      "p_name": "School belt",
-      "email": "abc@gmail.com",
-      "p_quentity": "200",
-      "date": "Sun Oct 23 2022",
-      "address": "mirpur-2,dhaka"
-    },
-    {
       "name": "Prashanta Chakraborty",
       "phone": "01754540234",
       "p_name": "belt",
       "email": "prashanta0234@gmail.com",
-      "p_quentity": "50",
+      "p_quentity": 50,
       "date": "Sun Oct 23 2022",
       "address": "Mirpur-2",
+      "id": 1,
+      "total": 5000
+    },
+    {
+      "name": "Md Rezwan",
+      "phone": "01992386693",
+      "p_name": "Cap",
+      "email": "prashanta0234@gmail.com",
+      "p_quentity": 5200,
+      "date": "Tue Nov 08 2022",
+      "address": "Savar",
+      "total": 260000,
       "id": 2
     },
     {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "belt",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "50",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
+      "name": "Md Sajed",
+      "phone": "01710073692",
+      "p_name": "Belt",
+      "email": "sajed@gmail.com",
+      "p_quentity": 566,
+      "date": "Tue Nov 08 2022",
+      "address": "Mirpur-11",
+      "total": 113200,
       "id": 3
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "belt",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "50",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 4
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "dfdf",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "55",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 6
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "dfdf",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "55",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 7
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "dfdf",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "55",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 8
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "jkjk",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "566",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 9
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "belt",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "55",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2v",
-      "id": 10
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "belt",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "5200",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 12
-    },
-    {
-      "name": "Prashanta Chakraborty",
-      "phone": "01754540234",
-      "p_name": "dfdf",
-      "email": "prashanta0234@gmail.com",
-      "p_quentity": "7575",
-      "date": "Sun Oct 23 2022",
-      "address": "Mirpur-2",
-      "id": 13
-    },
-    {
-      "name": "Md sajed",
-      "phone": "01*********",
-      "p_name": "Sticker",
-      "email": "sajed@gmail.com",
-      "p_quentity": "100",
-      "date": "Sun Oct 23 2022",
-      "address": "mirpur-11",
-      "id": 14
-    },
-    {
-      "name": "Munna",
-      "phone": "019888",
-      "p_name": "shirt",
-      "email": "munna@gmail.com",
-      "p_quentity": "50",
-      "date": "Sun Oct 23 2022",
-      "address": "dhaka, bangladesh",
-      "id": 15
-    },
-    {
-      "name": "Md Joy",
-      "phone": "017****",
-      "p_name": "card",
-      "email": "joy@gmail.com",
-      "p_quentity": "25",
-      "date": "Thu Oct 27 2022",
-      "address": "Moakhali\n",
-      "id": 16
-    },
-    {
-      "name": "Md rezwan",
-      "phone": "01992386693",
-      "p_name": "Batch",
-      "email": "rezwan@gmail.com",
-      "p_quentity": "20",
-      "date": "Thu Oct 27 2022",
-      "address": "Savar",
-      "id": 17
-    },
-    {
-      "name": "md sajed",
-      "phone": "01958858824",
-      "p_name": "Cap",
-      "email": "sajed@gmail.com",
-      "p_quentity": "20",
-      "date": "Fri Oct 28 2022",
-      "address": "Mirpur-2",
-      "id": 18
     }
   ],
   "product": [
-    { "p_name": "Belt", "price": 5000, "p_quentity": 400 },
-    { "p_name": "Cap", "price": 7000, "p_quentity": 1000 },
-    { "p_name": "T-shirt", "price": 500, "p_quentity": 20000 },
-    { "p_name": "Jense", "price": 3000, "p_quentity": 40000 }
+    {
+      "product_name": "Bag",
+      "product_price": "4999",
+      "quantity": "100000",
+      "date": "Mon Nov 07 2022",
+      "id": 1
+    },
+    {
+      "product_name": "Belt",
+      "product_price": "200",
+      "quantity": "50000",
+      "date": "Mon Nov 07 2022",
+      "id": 2
+    },
+    {
+      "product_name": "Cap",
+      "product_price": "50",
+      "quantity": "500000",
+      "date": "Mon Nov 07 2022",
+      "id": 3
+    }
   ]
 }

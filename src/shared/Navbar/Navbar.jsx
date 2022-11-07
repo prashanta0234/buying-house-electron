@@ -27,8 +27,6 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="font-semibold hover:text-white  ease-in-out duration-300"
-                  to="/addItem"
                   className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
                   to="/add-products"
                 >
@@ -46,7 +44,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
-                  to="/product"
+                  to="/productlist"
                 >
                   Product List
                 </Link>

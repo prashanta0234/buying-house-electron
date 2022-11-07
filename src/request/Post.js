@@ -9,6 +9,7 @@ class PostRequest {
       data,
     })
       .then(function (response) {
+        console.log("added", response);
         swal("Good job!", "Added!", "success");
       })
       .catch(function (error) {

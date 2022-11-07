@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import Navbar from "../../shared/Navbar/Navbar";
 
-export default function ProductList() {
+export default function EmptList() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [resetPaginationToggle, setResetPaginationToggle] =
@@ -12,7 +12,7 @@ export default function ProductList() {
 
   const fetchData = async () => {
     try {
-      await axios("http://localhost:9000/product").then(function (response) {
+      await axios("http://localhost:9000/products").then(function (response) {
         setData(response.data);
       });
     } catch (err) {

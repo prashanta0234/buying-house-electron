@@ -1,5 +1,5 @@
 import React from "react";
-import AddItem from "./component/AddItem/AddItem";
+
 import Login from "./component/Login/Login";
 
 import { Routes, Route } from "react-router-dom";
@@ -7,6 +7,9 @@ import BuyerList from "./component/BuyerList";
 import AddProduct from "./component/AddProduct/AddProduct";
 import RawItem from "./component/RawItem/RawItem";
 import AddEmp from "./component/AddEmp/AddEmp";
+import ProductList from "./component/AddProduct/ProductList";
+import EmptList from "./component/AddEmp/Emplist";
+import AddOrder from "./component/AddItem/AddOrder";
 
 const App = () => {
   return (
@@ -14,10 +17,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/rawItems" element={<RawItem />} />
-        <Route path="/AddOrder" element={<AddItem />} />
+        <Route path="/AddOrder" element={<AddOrder />} />
         <Route path="/buyerlist" element={<BuyerList />} />
-        <Route path="/add-products" element={<AddProduct/>} />
-        <Route path="/addEMPLOYEE" element={<AddEmp/>} />
+        <Route path="/add-products" element={<AddProduct />} />
+        <Route path="/productlist" element={<ProductList />} />
+        <Route path="/addEMPLOYEE" element={<AddEmp />} />
+        <Route path="/employee-list" element={<EmptList />} />
       </Routes>
     </>
   );
