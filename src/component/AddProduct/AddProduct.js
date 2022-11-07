@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../shared/Navbar/Navbar";
+import logo from "../../images/logo/logo.svg";
 
 const AddProduct = () => {
   const submitHendaler = async (e) => {
@@ -20,7 +21,7 @@ const AddProduct = () => {
       <div>
         <div className="px-12 md:px-28 py-12 bg-main container mx-auto mt-12 w-full rounded-sm flex flex-col items-center justify-center">
           <div className="flex justify-center">
-            <img height="100px" width="300px" src={log} alt="" />
+            <img height="100px" width="300px" src={logo} alt="" />
           </div>
           <div className="bg-neutral bg-opacity-30 text-center my-6 py-4 rounded-sm w-full">
             <p className="font-bold text-2xl text-white ">ADD NEW ORDER</p>

@@ -160,5 +160,11 @@
       "address": "Mirpur-2",
       "id": 18
     }
+  ],
+  "product": [
+    { "p_name": "Belt", "price": 5000, "p_quentity": 400 },
+    { "p_name": "Cap", "price": 7000, "p_quentity": 1000 },
+    { "p_name": "T-shirt", "price": 500, "p_quentity": 20000 },
+    { "p_name": "Jense", "price": 3000, "p_quentity": 40000 }
   ]
 }
