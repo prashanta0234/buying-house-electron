@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../shared/Navbar/Navbar";
 import log from "../../images/logo/black.png";
 import { useRef } from "react";
@@ -12,6 +12,16 @@ const AddItem = () => {
   let mail = useRef(null);
   let pQuentity = useRef(null);
   let addr = useRef(null);
+
+  const [product, setProduct] = useState([]);
+
+  console.log(product);
+
+  useEffect(() => {
+    axios.get(`http://localhost:9000/product`).then((response) => {
+      setProduct(response.data);
+    });
+  }, []);
 
   const submitHendaler = async (e) => {
     e.preventDefault();
@@ -87,14 +97,13 @@ const AddItem = () => {
                     minlength="8"
                     required
                   />
-                  <input
-                    className="py-4 rounded-md px-4 placeholder:text-md focus:text-md outline-none"
-                    type="text"
-                    name="product_name"
-                    placeholder="Product Name"
-                    ref={productName}
-                    required
-                  />
+                  <select className="rounded-md px-2" id="select1">
+                    {product.map((item) => (
+                      <option key={item.p_name + "2"} value="free">
+                        {item.p_name}
+                      </option>
+                    ))}
+                  </select>
                   <input
                     className="py-4 rounded-md px-4 placeholder:text-md focus:text-md outline-none"
                     type="email"
