@@ -7,6 +7,8 @@ import DataTable from "react-data-table-component";
 export default function BuyerList() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
+  const [dates, setDate] = useState("");
+  const [status, setStatus] = useState(null);
   const [resetPaginationToggle, setResetPaginationToggle] =
     React.useState(false);
 
@@ -21,7 +23,11 @@ export default function BuyerList() {
   };
   useEffect(() => {
     fetchData();
-  }, []);
+    let dat = new Date();
+    let date = dat.toISOString().slice(0, 10);
+    setDate(date);
+  }, [status]);
+  console.log(dates);
 
   const columns = [
     {
@@ -50,6 +56,45 @@ export default function BuyerList() {
       selector: (row) => row.date,
       sortable: true,
     },
+    {
+      name: "Delivery date",
+      selector: (row) => row.d_date,
+      sortable: true,
+    },
+    {
+      name: "Status",
+      selector: (row) => {
+        const handaler = async (id) => {
+          console.log(id);
+          const res = await axios.patch(`http://localhost:9000/order/${id}`, {
+            status: true,
+          });
+          setStatus(res);
+        };
+
+        if (dates > row.d_date && row.status === false) {
+          return <p class="text-red-600 font-bold">Time Out</p>;
+        } else if (row.status === true) {
+          return <p class="text-green-600 font-bold">Deliverd</p>;
+        } else {
+          const a = new Date(dates);
+          const b = new Date(row.d_date);
+          const diffTime = Math.abs(a - b);
+          const days =
+            Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + " days left";
+
+          return (
+            <div class="flex space-x-2">
+              <p class="text-blue-600 font-bold">{days}</p>{" "}
+              <button class="bg-green-300 p-1" onClick={() => handaler(row.id)}>
+                Deliverd
+              </button>
+            </div>
+          );
+        }
+      },
+      sortable: true,
+    },
   ];
 
   const filteredItems = data.filter((item) => {
@@ -61,7 +106,6 @@ export default function BuyerList() {
       return true;
     }
   });
-
 
   return (
     <>

@@ -9,7 +9,8 @@ import RawItem from "./component/RawItem/RawItem";
 import AddEmp from "./component/AddEmp/AddEmp";
 import ProductList from "./component/AddProduct/ProductList";
 import EmptList from "./component/AddEmp/Emplist";
-import AddOrder from "./component/AddItem/AddOrder";
+import AddOrder from "./component/Addorder/AddOrder";
+import RawItemList from "./component/RawItem/RawItemList";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/productlist" element={<ProductList />} />
         <Route path="/addEMPLOYEE" element={<AddEmp />} />
         <Route path="/employee-list" element={<EmptList />} />
+        <Route path="/rowitem-list" element={<RawItemList />} />
       </Routes>
     </>
   );

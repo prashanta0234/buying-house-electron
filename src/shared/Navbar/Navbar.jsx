@@ -54,7 +54,7 @@ const Navbar = () => {
                   className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
                   to="/buyerlist"
                 >
-                  Buyer List
+                  Order list
                 </Link>
               </li>
               <li>
@@ -65,6 +65,22 @@ const Navbar = () => {
                   Employee List
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
+                  to="/rowitem-list"
+                >
+                  Available Materials
+                </Link>
+              </li>
+              {/* <li>
+                <Link
+                  className="font-semibold hover:bg-green-200/60 p-2 rounded ease-in-out duration-300"
+                  to="/graph"
+                >
+                  Graph
+                </Link>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../shared/Navbar/Navbar";
-import logo from "../../images/logo/logo.svg";
+import logo from "../../images/logo/black.png";
 import PostRequest from "../../request/Post";
 
 const AddProduct = () => {
@@ -19,7 +19,7 @@ const AddProduct = () => {
       quantity,
       date,
     });
-    console.log({ product_name, product_price, quantity, date });
+
     form.product_name.value = "";
     form.product_price.value = "";
     form.quantity.value = "";
@@ -33,7 +33,7 @@ const AddProduct = () => {
             <img height="100px" width="300px" src={logo} alt="" />
           </div>
           <div className="bg-neutral bg-opacity-30 text-center my-6 py-4 rounded-sm w-full">
-            <p className="font-bold text-2xl text-white ">ADD NEW ORDER</p>
+            <p className="font-bold text-2xl text-white ">ADD NEW Product</p>
           </div>
 
           {/* input section */}
@@ -64,7 +64,6 @@ const AddProduct = () => {
                     type="number"
                     name="quantity"
                     placeholder="Product Quantity"
-                    //   ref={pQuentity}
                     required
                   />
                 </div>

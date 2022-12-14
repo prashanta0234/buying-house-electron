@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../../shared/Navbar/Navbar";
+// import Navbar from "../../../shared/Navbar/Navbar";
 import log from "../../images/logo/black.png";
 import { useRef } from "react";
 
-import PostRequest from "../../request/Post";
+// import PostRequest from "../../../request//Post";
 import axios from "axios";
 import swal from "sweetalert";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
+import PostRequest from "../../request/Post";
+import Navbar from "../../shared/Navbar/Navbar";
 
 const AddOrder = () => {
   const [product, setProduct] = useState([]);
@@ -13,6 +18,8 @@ const AddOrder = () => {
   const [selectPrice, setSelectPrice] = useState(0);
   const [selectquantity, setSelectquantiry] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [dates, setDate] = useState(new Date());
+
   let buyerName = useRef(null);
   let buyerPhone = useRef(null);
   let productName = useRef(null);
@@ -42,8 +49,6 @@ const AddOrder = () => {
     e.preventDefault();
     let p_name = productName.current.value;
     setSelectP(p_name);
-
-    console.log(parseInt(filteredItems[0].product_price));
     setSelectPrice(parseInt(filteredItems[0].product_price));
   };
 
@@ -84,17 +89,12 @@ const AddOrder = () => {
         date,
         address,
         total: totalPrice,
+        d_date: dates,
       });
-      console.log(
-        name,
-        phone,
-        p_name,
-        email,
-        p_quentity,
-        date,
-        address,
-        totalPrice
-      );
+      // const requesta = new PostRequest("Totalsale", {
+      //   total: totalPrice,
+      // });
+
       setSelectP("");
       setSelectPrice(0);
       setSelectquantiry(1);
@@ -108,7 +108,7 @@ const AddOrder = () => {
     } else {
       swal({
         title: "Sorry!",
-        text: "Calculate Totoal price!",
+        text: "Calculate Total price!",
         icon: "warning",
 
         dangerMode: true,
@@ -170,9 +170,24 @@ const AddOrder = () => {
                     ref={mail}
                     required
                   />
+                  <input
+                    className="py-4 rounded-md px-4 placeholder:text-md focus:text-md outline-none"
+                    type="text"
+                    name="quantity"
+                    placeholder="Product Quantity"
+                    ref={pQuentity}
+                    onChange={(e) => handleselectQuantity(e)}
+                    required
+                  />
+                  <DatePicker
+                    selected={dates}
+                    className="py-4 w-full rounded-md px-4 placeholder:text-md focus:text-md outline-none"
+                    onChange={(date) => setDate(date)}
+                    dateFormat="yyyy/MM/dd"
+                  />
                 </div>
 
-                <input
+                {/* <input
                   className="py-4 w-full my-6 rounded-md px-4 placeholder:text-md focus:text-md outline-none"
                   type="text"
                   name="quantity"
@@ -180,9 +195,9 @@ const AddOrder = () => {
                   ref={pQuentity}
                   onChange={(e) => handleselectQuantity(e)}
                   required
-                />
+                /> */}
                 <textarea
-                  className="py-4 w-full rounded-md px-4 placeholder:text-md focus:text-md outline-none"
+                  className="py-4 w-full rounded-md mt-[30px] px-4 placeholder:text-md focus:text-md outline-none"
                   name="address"
                   cols="10"
                   rows="5"

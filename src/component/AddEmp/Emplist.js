@@ -12,7 +12,7 @@ export default function EmptList() {
 
   const fetchData = async () => {
     try {
-      await axios("http://localhost:9000/products").then(function (response) {
+      await axios("http://localhost:9000/employee").then(function (response) {
         setData(response.data);
       });
     } catch (err) {
@@ -25,22 +25,26 @@ export default function EmptList() {
 
   const columns = [
     {
-      name: "Product Name",
-      selector: (row) => row.product_name,
+      name: "Employee Name",
+      selector: (row) => row.Employee_name,
       sortable: true,
     },
     {
-      name: "Product Price (TK)",
-      selector: (row) => row.product_price,
+      name: "Employee Sellary",
+      selector: (row) => row.Employee_Sellary,
     },
 
     {
-      name: "Product Quantity",
-      selector: (row) => row.quantity,
+      name: "Employee Phone",
+      selector: (row) => row.Number,
+    },
+    {
+      name: "Employee Address",
+      selector: (row) => row.Employee_Address,
     },
 
     {
-      name: "Manufactur date",
+      name: "Employee Joining Data",
       selector: (row) => row.date,
       sortable: true,
     },
@@ -49,11 +53,8 @@ export default function EmptList() {
   const filteredItems = data.filter((item) => {
     console.log(item);
     if (search !== "") {
-      console.log(item.product_name);
-      return (
-        item.product_name &&
-        item.product_name.toLowerCase().includes(search.toLowerCase())
-      );
+      console.log(item.number);
+      return item.Number && item.Number.includes(search);
     } else {
       return true;
     }
@@ -65,7 +66,7 @@ export default function EmptList() {
 
       <div className="ml-5 mr-5">
         <DataTable
-          title="Product List"
+          title="Employee List"
           columns={columns}
           data={filteredItems}
           pagination

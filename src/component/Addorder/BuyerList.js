@@ -1,10 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Navbar from "../shared/Navbar/Navbar.jsx";
 
 import DataTable from "react-data-table-component";
-import Navbar from "../../shared/Navbar/Navbar";
 
-export default function ProductList() {
+export default function BuyerList() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [resetPaginationToggle, setResetPaginationToggle] =
@@ -12,7 +12,7 @@ export default function ProductList() {
 
   const fetchData = async () => {
     try {
-      await axios("http://localhost:9000/product").then(function (response) {
+      await axios("http://localhost:9000/order").then(function (response) {
         setData(response.data);
       });
     } catch (err) {
@@ -25,33 +25,42 @@ export default function ProductList() {
 
   const columns = [
     {
-      name: "Product Name",
-      selector: (row) => row.product_name,
+      name: "Name",
+      selector: (row) => row.name,
       sortable: true,
     },
     {
-      name: "Product Price (TK)",
-      selector: (row) => row.product_price,
+      name: "Phone",
+      selector: (row) => row.phone,
     },
-
     {
-      name: "Product Quantity",
-      selector: (row) => row.quantity,
+      name: "Email",
+      selector: (row) => row.email,
     },
-
     {
-      name: "Manufactur date",
+      name: "product name",
+      selector: (row) => row.p_name,
+    },
+    {
+      name: "product Quentity",
+      selector: (row) => row.p_quentity,
+    },
+    {
+      name: "Order date",
       selector: (row) => row.date,
       sortable: true,
+    },
+    {
+      name: "Delivery date",
+      selector: (row) => row.d_date,
     },
   ];
 
   const filteredItems = data.filter((item) => {
-    if (search !== " ") {
-      return (
-        item.product_name &&
-        item.product_name.toLowerCase().includes(search.toLowerCase())
-      );
+    console.log(item);
+    if (search !== "") {
+      console.log(item.number);
+      return item.phone && item.phone.includes(search);
     } else {
       return true;
     }
@@ -63,7 +72,7 @@ export default function ProductList() {
 
       <div className="ml-5 mr-5">
         <DataTable
-          title="Product List"
+          title="Order List"
           columns={columns}
           data={filteredItems}
           pagination
@@ -71,10 +80,10 @@ export default function ProductList() {
           subHeader
           subHeaderComponent={
             <input
-              type="text"
+              type="number"
               id="number"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block min-w-[500px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Enter Item Name"
+              placeholder="Enter Number"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />

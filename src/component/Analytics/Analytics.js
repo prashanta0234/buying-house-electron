@@ -1,11 +1,16 @@
-import React from "react";
-import ApexChart from "../../Graph/ApexChart";
+import React, { Fragment, lazy, Suspense } from "react";
 
-export default function Analytics() {
+const BuyerList = lazy(() => import("../BuyerList"));
+const Graph = lazy(() => import("../../Graph/Chart"));
+
+function Analytics() {
   return (
     <>
-      <ApexChart />
-      <div>Analytics</div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <BuyerList />
+        <Graph />
+      </Suspense>
     </>
   );
 }
+export default React.memo(Analytics);

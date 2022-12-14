@@ -47,6 +47,7 @@ const Login = () => {
                 </p>
 
                 <form onSubmit={handleLogin}>
+                  {/* email */}
                   <div className="form-control w-full mb-6">
                     <label className="label">
                       <span className="label-text text-lg">Email Address</span>
@@ -59,7 +60,7 @@ const Login = () => {
                       className="input input-bordered border-main w-full focus:outline-main"
                     />
                   </div>
-
+                  {/* password */}
                   <div className="form-control w-full ">
                     <label className="label">
                       <span className="label-text text-lg">Password</span>

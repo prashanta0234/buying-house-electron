@@ -9,7 +9,9 @@
       "date": "Sun Oct 23 2022",
       "address": "Mirpur-2",
       "id": 1,
-      "total": 5000
+      "total": 5000,
+      "d_date": "2022-11-29",
+      "status": true
     },
     {
       "name": "Md Rezwan",
@@ -20,7 +22,9 @@
       "date": "Tue Nov 08 2022",
       "address": "Savar",
       "total": 260000,
-      "id": 2
+      "id": 2,
+      "d_date": "2022-12-19",
+      "status": false
     },
     {
       "name": "Md Sajed",
@@ -31,7 +35,110 @@
       "date": "Tue Nov 08 2022",
       "address": "Mirpur-11",
       "total": 113200,
-      "id": 3
+      "id": 3,
+      "d_date": "2022-12-2",
+      "status": true
+    },
+    {
+      "name": "Md ronok",
+      "phone": "01854725687",
+      "p_name": "Net",
+      "email": "ronok@gmail.com",
+      "p_quentity": 300,
+      "date": "Tue Nov 08 2022",
+      "address": "mirpur-1",
+      "total": 270000,
+      "id": 4,
+      "d_date": "2022-11-12",
+      "status": false
+    },
+    {
+      "name": "Prashanta Chakraborty",
+      "phone": "01754540234",
+      "p_name": "Cap",
+      "email": "prashanta0234@gmail.com",
+      "p_quentity": 5200,
+      "date": "Tue Nov 08 2022",
+      "address": "Mirpur-2",
+      "total": 260000,
+      "id": 5,
+      "d_date": "2022-10-25",
+      "status": false
+    },
+    {
+      "name": "Munna",
+      "phone": "019008545",
+      "p_name": "Belt",
+      "email": "munna@gmail.com",
+      "p_quentity": 500,
+      "date": "Wed Nov 09 2022",
+      "address": "Dhaka",
+      "total": 100000,
+      "id": 6,
+      "d_date": "2022-11-20",
+      "status": true
+    },
+    {
+      "name": "Munna",
+      "phone": "015698225",
+      "p_name": "Cap",
+      "email": "munna@munna.com",
+      "p_quentity": 200,
+      "date": "Sat Nov 19 2022",
+      "address": "mirpur",
+      "total": 10000,
+      "d_date": "2022-11-25T16:40:31.000Z",
+      "id": 7,
+      "status": true
+    },
+    {
+      "name": "Faysal Ahmed",
+      "phone": "0185872564",
+      "p_name": "Cap",
+      "email": "faysal@gmail.com",
+      "p_quentity": 400,
+      "date": "Sun Nov 27 2022",
+      "address": "Dhaka",
+      "total": 20000,
+      "d_date": "2022-12-02T06:15:55.000Z",
+      "id": 8
+    },
+    {
+      "name": "Abid Khan",
+      "phone": "0148759545",
+      "p_name": "Cap",
+      "email": "abid@gmail.com",
+      "p_quentity": 500,
+      "date": "Sun Nov 27 2022",
+      "address": "Mipur-1",
+      "total": 25000,
+      "d_date": "2022-12-06T06:21:04.000Z",
+      "id": 9,
+      "status": true
+    },
+    {
+      "name": "Bcd",
+      "phone": "0125784854",
+      "p_name": "Net",
+      "email": "bcd@gmail.com",
+      "p_quentity": 200,
+      "date": "Mon Dec 12 2022",
+      "address": "Dhaka-123",
+      "total": 180000,
+      "d_date": "2022-12-31T15:31:51.000Z",
+      "id": 10
+    },
+    {
+      "name": "karim",
+      "phone": "019854762",
+      "p_name": "Cap",
+      "email": "karim@gmail.com",
+      "p_quentity": 200,
+      "date": "Tue Dec 13 2022",
+      "address": "dhaka",
+      "total": 10000,
+      "d_date": "2022-12-24T06:50:23.000Z",
+      "id": 11
     }
   ],
   "product": [
@@ -55,6 +162,129 @@
       "quantity": "500000",
       "date": "Mon Nov 07 2022",
       "id": 3
+    },
+    {
+      "product_name": "Net",
+      "product_price": "900",
+      "quantity": "3000",
+      "date": "Tue Nov 08 2022",
+      "id": 4
+    },
+    {
+      "product_name": "T-shirt",
+      "product_price": "250",
+      "quantity": "100",
+      "date": "Sun Nov 27 2022",
+      "id": 5
+    },
+    {
+      "product_name": "polo-shirt",
+      "product_price": "250",
+      "quantity": "100",
+      "date": "Mon Dec 12 2022",
+      "id": 6
+    }
+  ],
+  "rowitem": [
+    {
+      "product_name": "Fiver",
+      "company_name": "Royel bangla",
+      "company_email": "royel.bangla@gmail.com",
+      "quantity": "50",
+      "date": "Tue Nov 08 2022",
+      "id": 1
+    },
+    {
+      "product_name": "Flim",
+      "company_name": "F.M international",
+      "company_email": "fminternational@gmail.com",
+      "quantity": "12000",
+      "date": "Sun Nov 27 2022",
+      "id": 2
+    },
+    {
+      "product_name": "Fiver",
+      "company_name": "xyz.co",
+      "company_email": "xyz@gmail.com",
+      "quantity": "200",
+      "date": "Mon Dec 12 2022",
+      "id": 3
+    }
+  ],
+  "employee": [
+    {
+      "Employee_name": "Prashanta Chakraborty",
+      "Employee_Address": "mirpur-2",
+      "Number": "01754540234",
+      "date": "Tue Nov 08 2022",
+      "Employee_Sellary": 50000,
+      "id": 1
+    },
+    {
+      "Employee_name": "Sajed",
+      "Employee_Address": "Mirpur",
+      "Number": "01958465418",
+      "Employee_Sellary": "20000",
+      "date": "Mon Dec 12 2022",
+      "id": 2
+    },
+    {
+      "Employee_name": "Rezwan",
+      "Employee_Address": "savar",
+      "Number": "0172598465",
+      "Employee_Sellary": "690",
+      "date": "Mon Dec 12 2022",
+      "id": 3
+    },
+    {
+      "Employee_name": "Munna",
+      "Employee_Address": "mirpur",
+      "Number": "014587578",
+      "Employee_Sellary": "30000",
+      "date": "Mon Dec 12 2022",
+      "id": 4
+    }
+  ],
+  "Totalsale": [
+    {
+      "total": 260000,
+      "id": 1
+    },
+    {
+      "total": 100000,
+      "id": 2
+    },
+    {
+      "total": 3499300,
+      "id": 3
+    },
+    {
+      "total": 2500,
+      "id": 4
+    },
+    {
+      "total": 249950,
+      "id": 5
+    },
+    {
+      "total": 25000,
+      "id": 6
+    },
+    {
+      "total": 10000,
+      "id": 7
+    },
+    {
+      "total": 20000,
+      "id": 8
+    },
+    {
+      "total": 25000,
+      "id": 9
+    },
+    {
+      "total": 180000,
+      "id": 10
     }
   ]
 }
